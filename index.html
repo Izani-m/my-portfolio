@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izani Magagula | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Adding flex display to the home-content section */
+        .home-content .container {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            align-items: flex-start;
+        }
+        
+        .profile-image {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .welcome-message {
+            flex: 2;
+            min-width: 300px;
+            text-align: left;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .home-content .container {
+                flex-direction: column;
+            }
+            
+            .profile-image {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Izani Magagula</a>
+               <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about me.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="bucket-list.html">Bucket List</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                </ul>
+                    
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Home Page Content -->
+    <div class="page-title">
+        <div class="container">
+            <h1>Izani Magagula</h1>
+            <p>Welcome to my personal portfolio website</p>
+        </div>
+    </div>
+    <section class="home-content">
+        <div class="container">
+            <div class="profile-image">
+                <img src="portfolio.jpg" alt="Izani Magagula Profile Photo">
+            </div>
+            <div class="welcome-message">
+                <h2>Hello, I'm Izani!</h2>
+                <p>Thank you for visiting my portfolio website. I am a B com in Management Information Systems graduate from the University of Zululand.</p>
+                <p>On this site, you can learn more about my background, skills, and interests. Feel free to explore the different sections using the navigation menu above.</p>
+                <p>If you'd like to connect or have any questions, please visit the contact page.</p>
+                <a href="about me.html" class="button">Learn More About Me</a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://x.com/IzanieNkosi">Twitter</a> | 
+                    <a href="https://www.linkedin.com/in/ayanda-izani-magagula-781737281/">LinkedIn</a>
+                </div>
+                <div class="contact-info">
+                    <p>Contact: izaninkosi@gmail.com | Phone: 081-555-3617</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 Izani Magagula. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

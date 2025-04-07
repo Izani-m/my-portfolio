@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Izani Magagula</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Enhanced styling for About page */
+        .about-content .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: flex-start;
+            padding: 20px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .profile-image {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .profile-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-image img:hover {
+            transform: scale(1.02);
+        }
+        
+        .about-info {
+            flex: 2;
+            min-width: 300px;
+        }
+        
+        .about-info h2 {
+            color: #1e40af;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #dbeafe;
+        }
+        
+        .about-info h2:first-child {
+            margin-top: 0;
+        }
+        
+        .about-info p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #4b5563;
+        }
+        
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .skills-list li {
+            background-color: #dbeafe;
+            color: #1e40af;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .skills-list li:before {
+            content: "•";
+            color: #3b82f6;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        
+        .skills-list li:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(59, 130, 246, 0.2);
+        }
+        
+        .education-item {
+            background-color: #f8fafc;
+            border-left: 4px solid #3b82f6;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 0 6px 6px 0;
+        }
+        
+        .education-item h3 {
+            margin: 0 0 8px 0;
+            color: #1e40af;
+        }
+        
+        .education-item p {
+            margin: 0;
+            font-size: 15px;
+        }
+        
+        .goals-section {
+            background-color: #f0f9ff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 10px;
+            border: 1px solid #bfdbfe;
+        }
+        
+        @media (max-width: 768px) {
+            .about-content .container {
+                flex-direction: column;
+                padding: 15px;
+            }
+            
+            .profile-image {
+                margin-bottom: 20px;
+            }
+            
+            .skills-list {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .skills-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Izani Magagula</a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html" class="active">About Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="bucket-list.html">Bucket List</a></li>
+                        <li><a href="hobbies.html">Hobbies</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- About Page Content -->
+    <div class="page-title">
+        <div class="container">
+            <h1>About Me</h1>
+            <p>Learn about my journey, skills, and aspirations</p>
+        </div>
+    </div>
+    <section class="about-content">
+        <div class="container">
+            <div class="profile-image">
+                <img src="portfolio.jpg" alt="Izani Magagula Profile Photo">
+            </div>
+            <div class="about-info">
+                <h2>My Journey</h2>
+                <p>I recently graduated from the University of Zululand with a B.Com in Management Information Systems. While I have some background in coding from my academic studies, I consider myself a beginner as my coursework focused more on theory than practical application.</p>
+                
+                <p>Joining this bootcamp is an exciting step in my professional development. I'm eager to build upon my theoretical foundation and gain hands-on experience that will help me grow as a developer.</p>
+                
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>B.Com in Management Information Systems</h3>
+                    <p>University of Zululand | Graduated 2024</p>
+                </div>
+                
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>Basic programming</li>
+                    <li>Problem-solving</li>
+                    <li>Data analysis</li>
+                    <li>MIS principles</li>
+                    <li>Team collaboration</li>
+                    <li>Research</li>
+                </ul>
+                
+                <h2>Goals</h2>
+                <div class="goals-section">
+                    <p>My goal is to become a proficient developer who can build innovative solutions to real-world problems. I'm particularly interested in web development and creating user-friendly interfaces that enhance the user experience.</p>
+                    <p>As I continue to learn and grow, I hope to contribute to meaningful projects that make a positive impact on people's lives through technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://x.com/IzanieNkosi">Twitter</a> | 
+                    <a href="https://www.linkedin.com/in/ayanda-izani-magagula-781737281/">LinkedIn</a>
+                </div>
+                <div class="contact-info">
+                    <p>Contact: izaninkosi@gmail.com | Phone: 081-555-3617</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 Izani Magagula. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
